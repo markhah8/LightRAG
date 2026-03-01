@@ -3148,8 +3148,9 @@ def create_document_routes(
 
         except Exception as e:
             logger.error(f"Error getting paginated documents: {str(e)}")
+            logger.error(f"Request: page={request.page}, page_size={request.page_size}, status_filter={request.status_filter}, sort_field={request.sort_field}, sort_direction={request.sort_direction}")
             logger.error(traceback.format_exc())
-            raise HTTPException(status_code=500, detail=str(e))
+            raise HTTPException(status_code=500, detail=f"Error getting paginated documents: {str(e)}")
 
     @router.get(
         "/status_counts",

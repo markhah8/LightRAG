@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "bunx --bun vite",
+    "dev:strict": "bunx --bun vite --mode development",
     "build": "bunx --bun vite build",
     "lint": "eslint .",
     "preview": "bunx --bun vite preview",

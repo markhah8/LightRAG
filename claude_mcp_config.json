@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "lightrag": {
+      "command": "python3",
+      "args": ["/Applications/Soft/LightRAG/lightrag_mcp_server.py"],
+      "env": {
+        "LIGHTRAG_API_URL": "http://localhost:9621",
+        "LIGHTRAG_API_KEY": "lightrag-secure-key-2025"
+      }
+    }
+  }
+}
